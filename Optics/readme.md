@@ -5,10 +5,19 @@ Spectro-800 system. The design is documented using a Zemax prescription-data
 export and a STEP model so that the optical layout and mechanical envelope can
 be reviewed without requiring a particular Zemax release.
 
+## Shaded optical model
+
+![Shaded optical model with traced rays](ShadedModel.png)
+
+Shaded Zemax view of the spectrometer optical path. The image is provided as a
+visual reference; the STEP file remains the source for 3D CAD geometry and the
+prescription export remains the source for numerical optical data.
+
 ## Repository contents
 
 | File | Description |
 | :--- | :--- |
+| `ShadedModel.png` | Rendered shaded optical layout with traced rays and scale bar. |
 | `Zemax_Prescription_Data.md` | Reformatted export of the Zemax System/Prescription Data. It contains the system settings, wavelength and field definitions, surface sequence, materials, spacings, and selected first-order results. |
 | `OpenOCT_spec_3D.STP` | STEP representation of the spectrometer design for CAD inspection and mechanical integration. |
 
