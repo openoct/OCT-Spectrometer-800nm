@@ -13,10 +13,40 @@ Shaded Zemax view of the spectrometer optical path. The image is provided as a
 visual reference; the STEP file remains the source for 3D CAD geometry and the
 prescription export remains the source for numerical optical data.
 
+All optical components in the design are selected as off-the-shelf parts rather
+than custom-designed optics. This is an intentional advantage of the OpenOCT
+approach: catalog lenses, standard optical substrates, and commercially
+available grating components reduce sourcing risk, lower fabrication complexity,
+and make the spectrometer easier for other groups to reproduce.
+
+The prescription keeps the catalog-style component references next to the
+optical layout so the implementation path is clear. Vendor links for the lenses
+used in the design are provided below for quick sourcing checks.
+
+| Component reference | Vendor link |
+| :--- | :--- |
+| `ACA254-060-B` | [Thorlabs ACA254-060-B](https://www.thorlabs.com/thorproduct.cfm?partnumber=ACA254-060-B) |
+| `AC508-150-B` | [Thorlabs AC508-150-B](https://www.thorlabs.com/thorproduct.cfm?partnumber=AC508-150-B) |
+| `ED47-318` | [Edmund Optics #47-318](https://www.edmundoptics.com/p/50mm-dia.-x-150mm-fl-nir-ii-coated-achromatic-lens/7336) |
+| `LC1582` | [Thorlabs LC1582](https://www.thorlabs.com/thorproduct.cfm?partnumber=LC1582) |
+| VPH grating, 1200 l/mm at 840 nm | [Wasatch Photonics 1200 l/mm at 840 nm](https://wasatchphotonics.com/product/1200-lmm-at-840nm/) |
+
+Vendor pages should be checked for the current coating, stock status, and
+regional availability before ordering.
+
+## Evaluation summary
+
+![Zemax evaluation plots for the OpenOCT Spectro-800 optical design](Evaluation.PNG)
+
+The evaluation image provides a quick visual summary of the design, including
+spot diagrams at the evaluated wavelengths, diffraction encircled-energy plots,
+Huygens MTF, and a Huygens PSF cross section.
+
 ## Repository contents
 
 | File | Description |
 | :--- | :--- |
+| `Evaluation.PNG` | Zemax evaluation summary containing spot diagrams, encircled-energy plots, MTF, and PSF cross section. |
 | `ShadedModel.png` | Rendered shaded optical layout with traced rays and scale bar. |
 | `Zemax_Prescription_Data.md` | Reformatted export of the Zemax System/Prescription Data. It contains the system settings, wavelength and field definitions, surface sequence, materials, spacings, and selected first-order results. |
 | `OpenOCT_spec_3D.STP` | STEP representation of the spectrometer design for CAD inspection and mechanical integration. |
@@ -61,20 +91,6 @@ The complete surface-by-surface data, including radii, thicknesses, glass
 types, clear diameters, and component comments, is maintained in
 [`Zemax_Prescription_Data.md`](Zemax_Prescription_Data.md).
 
-## Optical sequence
-
-The following is a functional reading of the exported surface sequence. Exact
-surface locations and signs should be taken from the prescription table.
-
-| Surfaces | Function | Notable data |
-| :--- | :--- | :--- |
-| OBJ to 4 | Input objective | N-SF57 and N-SSK2; clear diameters approximately 20.25 to 22.25 mm |
-| 5 to STO | Stop and coordinate transition | Surface 6 is the system stop |
-| 7 to 11 | Grating assembly | Fused silica, two thin coded layers, and one `DGRATING` surface |
-| 12 | Coordinate transition and spacing | 102 mm nominal following the grating section |
-| 13 to 18 | Relay group | SFL6 and LAKN22 elements with 50.8 mm mechanical diameters |
-| 19 to IMA | Final imaging group | Silica and LC1582 element; 3.553457 mm image clear diameter |
-
 ## Zemax file availability
 
 The native Zemax project file (`.ZMX`/`.ZEMAX`) is intentionally not included.
@@ -90,18 +106,4 @@ particular, users should verify grating-specific settings, coating data,
 aperture definitions, tolerances, optimization operands, and catalog versions
 in the originating Zemax project before using the design for final performance
 claims or fabrication.
-
-## Reconstructing or reviewing the design
-
-1. Start with [`Zemax_Prescription_Data.md`](Zemax_Prescription_Data.md) and
-	enter the system units, wavelength, field, aperture, and surface sequence
-	into the target Zemax release.
-2. Confirm the glass catalogs and material names available in that release.
-3. Re-enter and verify the `DGRATING` surface parameters from the source design;
-	the prescription summary identifies the surface but does not list all
-	grating parameters.
-4. Use [`OpenOCT_spec_3D.STP`](OpenOCT_spec_3D.STP) to review the physical
-	arrangement and mechanical diameters.
-5. Re-run the optical analyses in the target Zemax version before treating the
-	reconstructed model as equivalent to the source project.
 
