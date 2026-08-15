@@ -51,25 +51,6 @@ Huygens MTF, and a Huygens PSF cross section.
 | `Zemax_Prescription_Data.md` | Reformatted export of the Zemax System/Prescription Data. It contains the system settings, wavelength and field definitions, surface sequence, materials, spacings, and selected first-order results. |
 | `OpenOCT_spec_3D.STP` | STEP representation of the spectrometer design for CAD inspection and mechanical integration. |
 
-## Design overview
-
-The prescription describes a sequential, on-axis optical system with a single
-design wavelength of 0.840 um and one on-axis field. The optical path contains
-three functional sections:
-
-1. **Input objective:** a compact refractive group using N-SF57 and N-SSK2,
-	followed by the system stop.
-2. **Spectral section:** a fused-silica substrate assembly containing a
-	diffractive grating surface. The grating is represented by the `DGRATING`
-	surface in the prescription.
-3. **Relay and image-forming optics:** a long free-space section followed by a
-	multi-element relay using SFL6, LAKN22, and silica elements, ending at the
-	image surface.
-
-The prescription uses millimeters for lens units. The object-space numerical
-aperture is 0.13, and the system aperture stop is surface 6, immediately before
-the grating assembly.
-
 ## Key prescription values
 
 | Parameter | Value |
