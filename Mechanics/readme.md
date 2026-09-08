@@ -6,7 +6,7 @@ This directory contains the CAD files, assembly instructions, and parts buy shee
 
 # Parts Buy List
 
-The [Parts buy list](<Mechanics/OCT_Spectrometer_v1/OCT Spectrometer Parts List.xlsx>) provides all of the components including the optical components listed in the optics repository, along with item count, pricing, and links for purchase.
+The [Parts buy list](<OCT_Spectrometer_v1/OCT Spectrometer Parts List - V1.xlsx>) provides all of the components including the optical components listed in the optics repository, along with item count, pricing, and links for purchase.
 
 | Part | Count |
 | :--- | :--- |
