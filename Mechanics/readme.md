@@ -49,4 +49,4 @@ There is also an [Assembly File](<Mechanics/OCT_Spectrometer_v1/OCT Spectrometer
 
 # Assembly Instructions
 
-A PDF of [Assembly Instructions](<OCT_Spectrometer_v1/OCT Spectrometer Assembly Instructions.stp>) is provided to demonstrate the assembly process using the parts listed in the parts buy list.
+A PDF of [Assembly Instructions](<OCT_Spectrometer_v1/OCT Spectrometer Assembly Instructions.pdf>) is provided to demonstrate the assembly process using the parts listed in the parts buy list.
