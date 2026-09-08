@@ -45,8 +45,8 @@ The [Grating Casing 2.](Grating%Casing%2.stop)
 
 The [Grating Clamp.](Grating%Clamp.stp)
 
-There is also an [Assembly File](Mechanics/OCT_Spectrometer_v1/OCT%Spectrometer%Assembly%Instructions.pdf) for better visualization of the proper CAD arrangement.
+There is also an [Assembly File](<Mechanics/OCT_Spectrometer_v1/OCT Spectrometer Assembly Instructions.pdf>) for better visualization of the proper CAD arrangement.
 
 # Assembly Instructions
 
-A PDF of [Assembly Instructions](OCT%Spectrometer%Assembly%Instructions.stp) is provided to demonstrate the assembly process using the parts listed in the parts buy list.
+A PDF of [Assembly Instructions](<OCT Spectrometer Assembly Instructions.stp>) is provided to demonstrate the assembly process using the parts listed in the parts buy list.
