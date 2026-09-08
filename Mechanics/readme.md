@@ -2,11 +2,11 @@
 
 This directory contains the CAD files, assembly instructions, and parts buy sheet for the mechanical design of the OCT Spectrometer. CAD files are designed in Autodesk Inventor 2025 and converted to .stp format.
 
-![Photo of the fully assembled spectrometer design.](OCT-Spectrometer-800nm/Mechanics/OCT_Spectrometer_v1/OCT%Spectrometer%Design%Photo.jpg)
+![Photo of the fully assembled spectrometer design.](<OCT_Spectrometer_v1/OCT Spectrometer Design Photo.jpg>)
 
 # Parts Buy List
 
-The [Parts buy list](OCT%Spectrometer%Parts%List%-V1.xlsx) provides all of the components including the optical components listed in the optics repository, along with item count, pricing, and links for purchase.
+The [Parts buy list](<OCT_Spectrometer_v1/OCT Spectrometer Parts List.xlsx>) provides all of the components including the optical components listed in the optics repository, along with item count, pricing, and links for purchase.
 
 | Part | Count |
 | :--- | :--- |
@@ -39,13 +39,13 @@ The [Parts buy list](OCT%Spectrometer%Parts%List%-V1.xlsx) provides all of the c
 
 This spectrometer contains 3D printed components made of PLA using a Bambu P1S 3D printer. Further printing specification are included in the assembly instructions. The printer contains three 3D components. They have been converted to .stp CAD files for inter-program usage:
 
-The [Grating Casing 1.](Grating%Casing%1.stp)
+The [Grating Casing 1.](<OCT_Spectrometer_v1/Grating Casing 1.stp>)
 
-The [Grating Casing 2.](Grating%Casing%2.stop)
+The [Grating Casing 2.](<OCT_Spectrometer_v1/Grating Casing 2.stp>)
 
-The [Grating Clamp.](Grating%Clamp.stp)
+The [Grating Clamp.](<OCT_Spectrometer_v1/Grating Clamp.stp>)
 
-There is also an [Assembly File](<Mechanics/OCT_Spectrometer_v1/OCT Spectrometer Assembly Instructions.pdf>) for better visualization of the proper CAD arrangement.
+There is also an [Assembly File](<OCT_Spectrometer_v1/OCT Spectrometer Assembly.stp>) for better visualization of the proper CAD arrangement.
 
 # Assembly Instructions
 
