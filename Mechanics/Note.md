@@ -18,4 +18,6 @@ The [Grating Clamp.](Grating%Clamp.stp)
 
 There is also an [Assembly File](OCT%Spectrometer%Assembly.stp) for better visualization of the proper CAD arrangement.
 
-#
+# Assembly Instructions
+
+A PDF of [Assembly Instructions](OCT%Spectrometer%Assembly%Instructions.stp) is provided to demonstrate the assembly process using the parts listed in the parts buy list.
