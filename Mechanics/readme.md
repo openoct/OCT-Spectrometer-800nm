@@ -2,6 +2,8 @@
 
 This directory contains the CAD files, assembly instructions, and parts buy sheet for the mechanical design of the OCT Spectrometer. CAD files are designed in Autodesk Inventor 2025 and converted to .stp format.
 
+![Photo of the fully assembled spectrometer design.](images/OCT%Spectrometer%Design%Photo.jpeg)
+
 # Parts Buy List
 
 The [Parts buy list](OCT%Spectrometer%Parts%List%-V1.xlsx) provides all of the components including the optical components listed in the optics repository, along with item count, pricing, and links for purchase.
