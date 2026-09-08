@@ -8,7 +8,7 @@ The [Parts buy list](OCT%Spectrometer%Parts%List%-V1.xlsx) provides all of the c
 
 # Printed Components
 
-This spectrometer contains 3D printed components made of PLA using a Bambu P1S 3D printer. Further printing specification are included in the assembly instructions. The printer contains three 3D components:
+This spectrometer contains 3D printed components made of PLA using a Bambu P1S 3D printer. Further printing specification are included in the assembly instructions. The printer contains three 3D components. They have been converted to .stp CAD files for inter-program usage:
 
 The [Grating Casing 1.](Grating%Casing%1.stp)
 
