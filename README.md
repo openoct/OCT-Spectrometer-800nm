@@ -11,7 +11,7 @@ available optical and mechanical components.
 
 - [Optics](Optics/README.md): optical layout, Zemax prescription data, STEP
   model, evaluation plots, and component sourcing references.
-- [Mechanics](Mechanics/README.md): mechanical CAD, assembly instructions,
+- [Mechanics](https://github.com/openoct/OCT-Spectrometer-800nm/blob/main/Mechanics/readme.md): mechanical CAD, assembly instructions,
   and parts buy list.
 
 ## Citation
